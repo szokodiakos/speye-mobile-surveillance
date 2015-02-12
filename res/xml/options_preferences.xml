@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/local_alarm" >
+        <SwitchPreference android:title="@string/enable_local_alarm" />
+
+        <Preference android:title="@string/choose_local_alarm" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/language_preferences" >
+        <ListPreference android:title="@string/select_language" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/status_notifications" >
+        <SwitchPreference android:title="@string/phone_charging_notification" />
+        <SwitchPreference android:title="@string/low_battery_notification" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

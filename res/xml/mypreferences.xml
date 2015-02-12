@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="root"
+    android:title="@string/setup_alert_accounts" >
+
+    <PreferenceCategory
+        android:key="call_category"
+        android:title="@string/call_accounts" >
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="sms_category"
+        android:title="@string/sms_accounts" >
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="email_category"
+        android:title="@string/email_accounts" >
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="dropbox_category"
+        android:title="@string/dropbox_accounts" >
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="hu.bme.vn82lz.speye"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="hu.bme.vn82lz.speye.splash.SplashscreenActivity"
+            android:label="@string/speye_main"
+            android:screenOrientation="unspecified"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="hu.bme.vn82lz.speye.mainmenu.MainMenuListActivity"
+            android:label="@string/main_menu"
+            android:screenOrientation="unspecified"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name="hu.bme.vn82lz.speye.motiondetection.MotionDetectionActivity"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
+        </activity>
+        <activity android:name="hu.bme.vn82lz.speye.motiondetection.SensorsActivity" >
+        </activity>
+        <activity android:name="hu.bme.vn82lz.speye.setupaccounts.SetupAlertPreferenceActivity" >
+        </activity>
+        <activity android:name="hu.bme.vn82lz.speye.setupaccounts.CallAccountFormActivity" >
+        </activity>
+        <activity android:name="hu.bme.vn82lz.speye.setupaccounts.SmsAccountFormActivity" >
+        </activity>
+        <activity android:name="hu.bme.vn82lz.speye.setupaccounts.EmailAccountFormActivity" >
+        </activity>
+        <activity android:name="hu.bme.vn82lz.speye.setupaccounts.DropboxAccountFormActivity" >
+        </activity>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <data android:scheme="db-gc6amplx4vxxqqb" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".options.OptionsPreferenceActivity"></activity>
+    </application>
+
+</manifest>
