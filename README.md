@@ -1,6 +1,8 @@
 # speye-mobile-surveillance
 Android mobile surveillance
 
+![alt tag](https://raw.githubusercontent.com/szokodiakos/speye-mobile-surveillance/master/res/drawable-xxhdpi/ic_launcher.png)
+
 Features:
  - Monitors objects with the backside camera
  - If the motion is greater than the threshold, it will alarm
